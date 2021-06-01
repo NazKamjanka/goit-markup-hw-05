@@ -52,7 +52,9 @@
 <section class="hero">
     <div class="center-item container">
         <h1 class="center-item-head">еффективные решение для вашего бизнеса</h1>
-        <button class="butn" type="button">Заказать услугу</button>
+        <button class="butn" type="button" data-modal-open>Заказать услугу</button>
+        
+        </div>
     </div>
 </section>
 <section class="description">
@@ -101,8 +103,11 @@
     <h2 class="work-description">Чем мы занимаемся</h2>
     <ul class="description-foto list container">
         <li class="work-photo"><img src="./images/techwork/img.png" alt="Пишем код" width="370" height="295"></li>
+        <p class="work-photo-overlay-one">Десктопные приложения</p>
         <li class="work-photo"><img src="./images/techwork/img-1.png" alt="Тестируєм код на телефоне" width="370" height="295"></li>
-        <li class="work-photo"><img src="./images/techwork/img-1.png" alt="Тестируем код на планшете" width="370" height="295"></li>
+        <p class="work-photo-overlay-two">Мобильные приложения</p>
+        <li class="work-photo"><img src="./images/techwork/img-2.png" alt="Тестируем код на планшете" width="370" height="295"></li>
+        <p class="work-photo-overlay-three">Дизайнерские решения</p>
     </ul>
     
 </section>
@@ -356,6 +361,11 @@
 
 </div>
 </footer>
-
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <but type="button" class="model-close-butn" data-modal-close >X</but>
+    </div>
+</div>
+<script src="./js/modal.js "></script>
 </body>
 </html>
