@@ -114,6 +114,8 @@ body {
   margin-left: 50px;
 }
 .mail-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -123,14 +125,16 @@ body {
 }
 .contact-svg {
   margin-right: 10px;
-  margin-bottom: -2px;
-  fill: rgba(117, 117, 117, 1);
+  fill: currentColor;
 }
+
 .contact-svg:hover,
 .contact-svg:focus {
   fill: var(--primery-text-color);
 }
 .tel-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -313,6 +317,7 @@ body {
   padding-bottom: 60px;
 }
 .footer-div {
+  margin-right: 70px;
 }
 .footer-contact {
   font-size: 14px;
@@ -395,6 +400,10 @@ body {
 
   color: white;
 }
+.foot-div {
+  display: flex;
+  align-items: baseline;
+}
 .logo-footer {
   color: var(--adres-color);
 }
@@ -402,11 +411,11 @@ body {
   width: 20px;
   height: 20px;
   fill: rgba(175, 177, 184, 1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list {
   display: flex;
-  justify-content: space-between;
+  align-items: baseline;
 }
 .social-list-link {
   display: flex;
@@ -416,7 +425,10 @@ body {
   height: 44px;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 50%;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-list-item {
+  border-radius: 0px 0px 4px 4px;
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -448,8 +460,8 @@ body {
   fill: var(--adres-color);
 }
 .clients {
-  padding-left: 215px;
-  padding-right: 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .clients-header {
   font-weight: bold;
@@ -464,6 +476,7 @@ body {
   width: 106px;
   height: 60px;
   fill: rgba(175, 177, 184, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list-link {
   display: flex;
@@ -472,7 +485,7 @@ body {
   border: 1px solid rgba(175, 177, 184, 1);
   width: 170px;
   height: 92px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
 }
 .clients-list-link:hover,
@@ -491,24 +504,27 @@ body {
 }
 
 .conect {
-  position: absolute;
   width: 206px;
   height: 80px;
-  right: 720px;
-  top: 2455px;
+}
+.foter-con {
+  display: flex;
+  align-items: baseline;
 }
 .conect-social {
   color: var(--adres-color);
   margin-bottom: 20px;
 }
 .des {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
+  background-color: rgba(245, 244, 250, 1);
+  border-radius: 4px;
 }
-.des-icon {
-  margin-left: 100px;
-  margin-bottom: 30px;
-}
+
 .overlay {
   position: absolute;
   top: 0;
